@@ -10,11 +10,11 @@ llm :
     provider: 'groq'
     model_name : 'llama-3.1-8b-instant'
     temperature : 0
-    max_output_token : 1000
+    max_output_tokens : 1000
 
   google : 
     provider: 'google'
     model_name : 'gemini-2.0-flash'
     temperature : 0
-    max_output_token : 1000
+    max_output_tokens : 1000
   
