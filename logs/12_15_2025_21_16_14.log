@@ -1,0 +1,39 @@
+{"timestamp": "2025-12-15T16:16:14.705171Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-15T16:16:14.705457Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-15T16:16:14.705599Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-15T16:16:14.705716Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-15T16:16:14.707248Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251215_211614_07d3386b", "temp_dir": "data\\session_20251215_211614_07d3386b", "faiss_dir": "faiss_index\\session_20251215_211614_07d3386b", "sessionized": true, "timestamp": "2025-12-15T16:16:14.708039Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:/Users/PC/OneDrive/Desktop/llm_ops/data/Hitler.txt", "saved_as": "data\\session_20251215_211614_07d3386b\\655662df.txt", "timestamp": "2025-12-15T16:16:14.708873Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2025-12-15T16:16:14.709114Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 34, "chunk_size": 200, "overlap": 20, "timestamp": "2025-12-15T16:16:14.709746Z", "level": "info", "event": "Documents split"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-15T16:16:14.710060Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251215_211614_07d3386b", "timestamp": "2025-12-15T16:16:20.094781Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-15T16:16:20.095000Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-15T16:16:20.095982Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-15T16:16:20.096110Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-15T16:16:20.096232Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-15T16:16:20.096360Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-15T16:16:20.097691Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "groq", "model": "llama-3.1-8b-instant", "timestamp": "2025-12-15T16:16:20.097826Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251215_211614_07d3386b", "timestamp": "2025-12-15T16:16:20.844336Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251215_211614_07d3386b", "timestamp": "2025-12-15T16:16:20.844599Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-15T16:16:20.845973Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-15T16:16:20.846155Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-15T16:16:20.846318Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-15T16:16:20.846486Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-15T16:16:20.847985Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-15T16:16:20.848144Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251215_211614_07d3386b", "timestamp": "2025-12-15T16:16:20.852785Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251215_211614_07d3386b", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251215_211614_07d3386b", "timestamp": "2025-12-15T16:16:20.852945Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20251215_211614_07d3386b", "user_input": "hello", "answer_preview": "I don't know.", "timestamp": "2025-12-15T16:16:35.952692Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20251215_211614_07d3386b", "user_input": "i am adolf hittler", "answer_preview": "I don't have information about a person by that name. However, based on the provided context, I can tell you that Adolf Hitler was a German leader who", "timestamp": "2025-12-15T16:16:51.218173Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20251215_211614_07d3386b", "user_input": "i am Adolf Hitler", "answer_preview": "You were a German leader who aspired to be an artist but was rejected twice by the Academy of Fine Arts Vienna. You later became a key figure in Germa", "timestamp": "2025-12-15T16:17:17.241887Z", "level": "info", "event": "Chain invoked successfully"}

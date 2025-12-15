@@ -1,0 +1,39 @@
+{"timestamp": "2025-12-14T11:19:04.253200Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:19:04.253549Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:19:04.253742Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:19:04.253909Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:19:04.255508Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251214_161904_1a4743e3", "temp_dir": "data\\session_20251214_161904_1a4743e3", "faiss_dir": "faiss_index\\session_20251214_161904_1a4743e3", "sessionized": true, "timestamp": "2025-12-14T11:19:04.261046Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:/Users/PC/OneDrive/Desktop/llm_ops/data/Hitler.txt", "saved_as": "data\\session_20251214_161904_1a4743e3\\21d058dc.txt", "timestamp": "2025-12-14T11:19:04.261913Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2025-12-14T11:19:04.262239Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 34, "chunk_size": 200, "overlap": 20, "timestamp": "2025-12-14T11:19:04.262876Z", "level": "info", "event": "Documents split"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-14T11:19:04.263214Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251214_161904_1a4743e3", "timestamp": "2025-12-14T11:19:11.295908Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-14T11:19:11.296163Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-14T11:19:11.296920Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:19:11.297053Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:19:11.297170Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:19:11.297289Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:19:11.298850Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "groq", "model": "llama-3.1-8b-instant", "timestamp": "2025-12-14T11:19:11.299023Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251214_161904_1a4743e3", "timestamp": "2025-12-14T11:19:11.986620Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251214_161904_1a4743e3", "timestamp": "2025-12-14T11:19:11.986881Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-14T11:19:11.987927Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:19:11.988060Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:19:11.988188Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:19:11.988308Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:19:11.989681Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-14T11:19:11.989826Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251214_161904_1a4743e3", "timestamp": "2025-12-14T11:19:11.994247Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251214_161904_1a4743e3", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251214_161904_1a4743e3", "timestamp": "2025-12-14T11:19:11.994544Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20251214_161904_1a4743e3", "user_input": "who is gitler", "answer_preview": "I don't know.", "timestamp": "2025-12-14T11:19:18.153321Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20251214_161904_1a4743e3", "user_input": "whi is hitler", "answer_preview": "Adolf Hitler was a German politician, dictator, and the leader of the National Socialist German Workers' Party (Nazi Party).", "timestamp": "2025-12-14T11:19:26.217920Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20251214_161904_1a4743e3", "user_input": "Hitler niazi rules and plicy", "answer_preview": "Hitler established a fascist regime characterized by the need for (living space) for Germans. He promised to restore Germany's pride, rebuild the econ", "timestamp": "2025-12-14T11:20:04.406233Z", "level": "info", "event": "Chain invoked successfully"}

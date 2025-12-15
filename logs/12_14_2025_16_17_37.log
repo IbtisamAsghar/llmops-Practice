@@ -1,0 +1,32 @@
+{"timestamp": "2025-12-14T11:17:37.787723Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:17:37.788026Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:17:37.788167Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:17:37.788277Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:17:37.789879Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251214_161737_4467de7e", "temp_dir": "data\\session_20251214_161737_4467de7e", "faiss_dir": "faiss_index\\session_20251214_161737_4467de7e", "sessionized": true, "timestamp": "2025-12-14T11:17:37.791177Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:/Users/PC/OneDrive/Desktop/llm_ops/data/Hitler.txt", "saved_as": "data\\session_20251214_161737_4467de7e\\e7ccf75e.txt", "timestamp": "2025-12-14T11:17:37.792257Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2025-12-14T11:17:37.792554Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 34, "chunk_size": 200, "overlap": 20, "timestamp": "2025-12-14T11:17:37.793189Z", "level": "info", "event": "Documents split"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-14T11:17:37.793623Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251214_161737_4467de7e", "timestamp": "2025-12-14T11:17:44.156081Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-14T11:17:44.156320Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-14T11:17:44.157125Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:17:44.157263Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:17:44.157378Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:17:44.157481Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:17:44.158889Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-1.5-flash", "timestamp": "2025-12-14T11:17:44.159020Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251214_161737_4467de7e", "timestamp": "2025-12-14T11:17:44.162375Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251214_161737_4467de7e", "timestamp": "2025-12-14T11:17:44.162523Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-14T11:17:44.163147Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:17:44.163285Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:17:44.163413Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:17:44.163548Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:17:44.164856Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-14T11:17:44.164984Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251214_161737_4467de7e", "timestamp": "2025-12-14T11:17:44.168376Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251214_161737_4467de7e", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251214_161737_4467de7e", "timestamp": "2025-12-14T11:17:44.168525Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+{"error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.", "timestamp": "2025-12-14T11:17:54.438059Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}

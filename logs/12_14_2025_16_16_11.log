@@ -1,0 +1,79 @@
+{"timestamp": "2025-12-14T11:16:11.471783Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:16:11.472055Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:16:11.472221Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:16:11.472357Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:16:11.473759Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251214_161611_9fb51488", "temp_dir": "data\\session_20251214_161611_9fb51488", "faiss_dir": "faiss_index\\session_20251214_161611_9fb51488", "sessionized": true, "timestamp": "2025-12-14T11:16:11.478980Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "C:/Users/PC/OneDrive/Desktop/llm_ops/data/Hitler.txt", "saved_as": "data\\session_20251214_161611_9fb51488\\2437d47d.txt", "timestamp": "2025-12-14T11:16:11.479738Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2025-12-14T11:16:11.480030Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 34, "chunk_size": 200, "overlap": 20, "timestamp": "2025-12-14T11:16:11.480614Z", "level": "info", "event": "Documents split"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-14T11:16:11.480903Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251214_161611_9fb51488", "timestamp": "2025-12-14T11:16:17.088515Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-12-14T11:16:17.088735Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-12-14T11:16:17.089518Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:16:17.089626Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:16:17.089712Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:16:17.089793Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:16:17.091062Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-12-14T11:16:17.091174Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251214_161611_9fb51488", "timestamp": "2025-12-14T11:16:17.094278Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251214_161611_9fb51488", "timestamp": "2025-12-14T11:16:17.094402Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-12-14T11:16:17.094895Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-12-14T11:16:17.095001Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-12-14T11:16:17.095182Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_6r...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-12-14T11:16:17.095309Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-12-14T11:16:17.097078Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/gemini-embedding-001", "timestamp": "2025-12-14T11:16:17.097219Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251214_161611_9fb51488", "timestamp": "2025-12-14T11:16:17.100756Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251214_161611_9fb51488", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251214_161611_9fb51488", "timestamp": "2025-12-14T11:16:17.100908Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 36.637397465s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 36
+}
+].
+{"error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 34.391850105s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 34\n}\n]", "timestamp": "2025-12-14T11:16:25.756823Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}

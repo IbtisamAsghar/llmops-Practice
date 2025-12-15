@@ -2,6 +2,8 @@ import os # work with files path and folder
 import logging # standard module for logging messages
 import datetime # to get the current date and time 
 import structlog # makes log structured in json format 
+from datetime import datetime
+
 
 class CustomLogger : # create a custom logger that we can resuse in our code
     def __init__(self , log_dir = "logs") : 
@@ -23,7 +25,7 @@ class CustomLogger : # create a custom logger that we can resuse in our code
         # creates a handler to save logs to the console (terminal)
 
         console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.INFO())
+        console_handler.setLevel(logging.INFO)
         console_handler.setFormatter(logging.Formatter("%(message)s"))
 
 
