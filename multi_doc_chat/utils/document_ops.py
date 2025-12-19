@@ -1,6 +1,7 @@
 from __future__ import annotations
 from pathlib import Path
 from typing import Iterable, List
+from fastapi import UploadFile
 from langchain.schema import Document
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 from multi_doc_chat.logger import GLOBAL_LOGGER as log
@@ -33,3 +34,12 @@ def load_documents(paths: Iterable[Path]) -> List[Document]:
         raise DocumentPortalException("Error loading documents", e) from e
     
 
+class FastAPIFileAdapter:
+    """Adapt FastAPI UploadFile to a simple object with .name and .getbuffer()."""
+    def __init__(self, uf: UploadFile):
+        self._uf = uf
+        self.name = uf.filename or "file"
+
+    def getbuffer(self) -> bytes:
+        self._uf.file.seek(0)
+        return self._uf.file.read()
