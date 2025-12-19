@@ -71,7 +71,7 @@ class ChatIngestor:
         chunk_size: int = 1000,
         chunk_overlap: int = 200,
         k: int = 5,
-        search_type: str = "mmr",
+        search_type: str = "mmr", 
         fetch_k: int = 20,
         lambda_mult: float = 0.5):
         try:
